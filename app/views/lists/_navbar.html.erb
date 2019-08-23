@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  
+  <%#Logan da Empresa Hubtec%>
+  <a><%= image_tag ("hubtecicone")%></a>
+   &nbsp; &nbsp; &nbsp; &nbsp;
+
+  <button type="button" class='btn btn-outline-secondary btn-sn'>
+    <%= link_to "Início", usuarios_backoffice_welcome_index_path, class:"text-light bg-dark"%>
+  </button>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto"></ul>
+
+    <%#Verificando se Usuário está logado%>  
+    <% if usuario_signed_in? %>
+      <form class="form-inline my-2 my-lg-0">
+        <strong><p class="text-light bg-dark">Bem-vindo <%= current_usuario.email.downcase %></p></strong>
+      </form>
+      &nbsp; &nbsp; &nbsp; &nbsp;
+      <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit"> 
+        <%= link_to "Logout - Sair", destroy_usuario_session_path, class:"text-light bg-dark", method: :delete %>
+      </button>
+
+    <% end %>
+  
+  </div>
+</nav>
