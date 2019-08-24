@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
+
+  devise_for :usuarios
   resources :lists
   namespace :usuarios_backoffice do
     get 'welcome/index'
   end
-  devise_for :usuarios
+
 
   #Redirecionando localhost:<port> para /usuarios/sign_in
   root :to => redirect("/lists")
