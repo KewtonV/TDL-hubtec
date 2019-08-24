@@ -16832,3 +16832,254 @@ Processing by ListsController#index as HTML
 Completed 200 OK in 34ms (Views: 32.2ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/lists" for ::1 at 2019-08-24 13:42:02 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ListsController#index as HTML
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/share/rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:15
+  Rendered lists/index.html.erb within layouts/application (11.9ms)
+Completed 500 Internal Server Error in 230ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery_ujs' with type 'application/javascript'
+Checked in these paths: 
+  /home/kewton/Cursoruby5/TDLC-Oficial/app/assets/config
+  /home/kewton/Cursoruby5/TDLC-Oficial/app/assets/images
+  /home/kewton/Cursoruby5/TDLC-Oficial/app/assets/javascripts
+  /home/kewton/Cursoruby5/TDLC-Oficial/app/assets/stylesheets
+  /usr/share/rvm/gems/ruby-2.6.3/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /usr/share/rvm/gems/ruby-2.6.3/gems/actioncable-5.2.3/lib/assets/compiled
+  /usr/share/rvm/gems/ruby-2.6.3/gems/activestorage-5.2.3/app/assets/javascripts
+  /usr/share/rvm/gems/ruby-2.6.3/gems/actionview-5.2.3/lib/assets/compiled
+  /usr/share/rvm/gems/ruby-2.6.3/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/kewton/Cursoruby5/TDLC-Oficial/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/javascripts/application.js:17
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___2360034508395175222_47090110422540'
+Started GET "/lists" for ::1 at 2019-08-24 13:42:30 -0300
+Processing by ListsController#index as HTML
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/share/rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:15
+  Rendered lists/index.html.erb within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery_ujs' with type 'application/javascript'
+Checked in these paths: 
+  /home/kewton/Cursoruby5/TDLC-Oficial/app/assets/config
+  /home/kewton/Cursoruby5/TDLC-Oficial/app/assets/images
+  /home/kewton/Cursoruby5/TDLC-Oficial/app/assets/javascripts
+  /home/kewton/Cursoruby5/TDLC-Oficial/app/assets/stylesheets
+  /usr/share/rvm/gems/ruby-2.6.3/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /usr/share/rvm/gems/ruby-2.6.3/gems/actioncable-5.2.3/lib/assets/compiled
+  /usr/share/rvm/gems/ruby-2.6.3/gems/activestorage-5.2.3/app/assets/javascripts
+  /usr/share/rvm/gems/ruby-2.6.3/gems/actionview-5.2.3/lib/assets/compiled
+  /usr/share/rvm/gems/ruby-2.6.3/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/kewton/Cursoruby5/TDLC-Oficial/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/javascripts/application.js:17
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___2360034508395175222_70129068337980'
+Started GET "/lists" for ::1 at 2019-08-24 13:42:40 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ListsController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/share/rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:15
+  Rendered lists/index.html.erb within layouts/application (11.4ms)
+Completed 500 Internal Server Error in 211ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery_ujs' with type 'application/javascript'
+Checked in these paths: 
+  /home/kewton/Cursoruby5/TDLC-Oficial/app/assets/config
+  /home/kewton/Cursoruby5/TDLC-Oficial/app/assets/images
+  /home/kewton/Cursoruby5/TDLC-Oficial/app/assets/javascripts
+  /home/kewton/Cursoruby5/TDLC-Oficial/app/assets/stylesheets
+  /usr/share/rvm/gems/ruby-2.6.3/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /usr/share/rvm/gems/ruby-2.6.3/gems/actioncable-5.2.3/lib/assets/compiled
+  /usr/share/rvm/gems/ruby-2.6.3/gems/activestorage-5.2.3/app/assets/javascripts
+  /usr/share/rvm/gems/ruby-2.6.3/gems/actionview-5.2.3/lib/assets/compiled
+  /usr/share/rvm/gems/ruby-2.6.3/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/kewton/Cursoruby5/TDLC-Oficial/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/javascripts/application.js:17
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__2703864632308007044_46943827268080'
+Started GET "/lists" for ::1 at 2019-08-24 13:42:42 -0300
+Processing by ListsController#index as HTML
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/share/rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:15
+  Rendered lists/index.html.erb within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery_ujs' with type 'application/javascript'
+Checked in these paths: 
+  /home/kewton/Cursoruby5/TDLC-Oficial/app/assets/config
+  /home/kewton/Cursoruby5/TDLC-Oficial/app/assets/images
+  /home/kewton/Cursoruby5/TDLC-Oficial/app/assets/javascripts
+  /home/kewton/Cursoruby5/TDLC-Oficial/app/assets/stylesheets
+  /usr/share/rvm/gems/ruby-2.6.3/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /usr/share/rvm/gems/ruby-2.6.3/gems/actioncable-5.2.3/lib/assets/compiled
+  /usr/share/rvm/gems/ruby-2.6.3/gems/activestorage-5.2.3/app/assets/javascripts
+  /usr/share/rvm/gems/ruby-2.6.3/gems/actionview-5.2.3/lib/assets/compiled
+  /usr/share/rvm/gems/ruby-2.6.3/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/kewton/Cursoruby5/TDLC-Oficial/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/javascripts/application.js:17
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__2703864632308007044_46943827840020'
+Started GET "/lists" for ::1 at 2019-08-24 13:43:05 -0300
+Processing by ListsController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/share/rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:15
+  Rendered lists/index.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery_ujs' with type 'application/javascript'
+Checked in these paths: 
+  /home/kewton/Cursoruby5/TDLC-Oficial/app/assets/config
+  /home/kewton/Cursoruby5/TDLC-Oficial/app/assets/images
+  /home/kewton/Cursoruby5/TDLC-Oficial/app/assets/javascripts
+  /home/kewton/Cursoruby5/TDLC-Oficial/app/assets/stylesheets
+  /usr/share/rvm/gems/ruby-2.6.3/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /usr/share/rvm/gems/ruby-2.6.3/gems/actioncable-5.2.3/lib/assets/compiled
+  /usr/share/rvm/gems/ruby-2.6.3/gems/activestorage-5.2.3/app/assets/javascripts
+  /usr/share/rvm/gems/ruby-2.6.3/gems/actionview-5.2.3/lib/assets/compiled
+  /usr/share/rvm/gems/ruby-2.6.3/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/kewton/Cursoruby5/TDLC-Oficial/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/javascripts/application.js:17
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__2703864632308007044_70274940593160'
+Started GET "/lists" for ::1 at 2019-08-24 13:43:15 -0300
+Processing by ListsController#index as HTML
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/share/rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.1ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:15
+  Rendered lists/index.html.erb within layouts/application (6.5ms)
+  Rendered lists/_navbar.html.erb (1.4ms)
+Completed 200 OK in 247ms (Views: 244.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/lists" for ::1 at 2019-08-24 13:43:30 -0300
+Processing by ListsController#index as HTML
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/share/rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:15
+  Rendered lists/index.html.erb within layouts/application (8.0ms)
+  Rendered lists/_navbar.html.erb (1.6ms)
+Completed 200 OK in 158ms (Views: 154.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/lists" for ::1 at 2019-08-24 13:43:32 -0300
+Processing by ListsController#index as HTML
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/share/rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.1ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:15
+  Rendered lists/index.html.erb within layouts/application (9.0ms)
+  Rendered lists/_navbar.html.erb (1.2ms)
+Completed 200 OK in 73ms (Views: 69.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/lists" for ::1 at 2019-08-24 13:43:34 -0300
+Processing by ListsController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/share/rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.1ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:15
+  Rendered lists/index.html.erb within layouts/application (5.9ms)
+  Rendered lists/_navbar.html.erb (1.2ms)
+Completed 200 OK in 33ms (Views: 31.0ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/lists/5" for ::1 at 2019-08-24 13:43:39 -0300
+Processing by ListsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"XSRYfpjg1ni/qrz4a1iNHNRn7EdOnK9YFOFvzXGOeKLhsLIyoLppb/jLK3EX1UrYXwL6G65NpTSl6iNJlfDt6Q==", "id"=>"5"}
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/lists_controller.rb:72
+  [1m[36mUsuario Load (0.1ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/share/rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/lists_controller.rb:62
+  [1m[36mList Destroy (0.3ms)[0m  [1m[31mDELETE FROM "lists" WHERE "lists"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/lists_controller.rb:62
+  [1m[35m (25.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/lists_controller.rb:62
+Redirected to http://localhost:3000/lists
+Completed 302 Found in 33ms (ActiveRecord: 26.1ms)
+
+
+Started GET "/lists" for ::1 at 2019-08-24 13:43:39 -0300
+Processing by ListsController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/share/rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.1ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:15
+  Rendered lists/index.html.erb within layouts/application (5.2ms)
+  Rendered lists/_navbar.html.erb (1.4ms)
+Completed 200 OK in 37ms (Views: 34.0ms | ActiveRecord: 0.3ms)
+
+
