@@ -21,9 +21,9 @@
         <strong><p class="text-light bg-dark">Bem-vindo <%= current_usuario.email.downcase %></p></strong>
       </form>
       &nbsp; &nbsp; &nbsp; &nbsp;
-      <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit"> 
-        <%= button_to "Logout - Sair", destroy_usuario_session_path, class:"text-light bg-dark", method: :delete, data: { confirm: "Tem certeza que deseja sair da conta?" }  %>
-      </button>
+ 
+        <%= button_to "Logout - Sair", destroy_usuario_session_path, class:"btn btn-outline-secondary my-2 my-sm-0", method: :delete, data: { confirm: "Tem certeza que deseja sair da conta?" }  %>
+
 
     <% end %>
   
