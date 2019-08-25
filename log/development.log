@@ -17551,3 +17551,310 @@ Processing by ListsController#index as HTML
 Completed 200 OK in 33ms (Views: 30.6ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for ::1 at 2019-08-24 22:34:13 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Started GET "/lists" for ::1 at 2019-08-24 22:34:13 -0300
+Processing by ListsController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/share/rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:15
+  Rendered lists/index.html.erb within layouts/application (13.5ms)
+Completed 500 Internal Server Error in 332ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( rails-ujs.js )` to `config/initializers/assets.rb` and restart your server):
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_include_tag "rails-ujs" %>
+    11: 
+    12:   </head>
+    13: 
+  
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__3694547944740433960_47158700608040'
+Started GET "/lists" for ::1 at 2019-08-24 22:34:27 -0300
+Processing by ListsController#index as HTML
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/share/rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.1ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:15
+  Rendered lists/index.html.erb within layouts/application (4.2ms)
+  Rendered lists/_navbar.html.erb (3.2ms)
+Completed 200 OK in 35ms (Views: 31.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/lists" for ::1 at 2019-08-24 22:38:52 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ListsController#index as HTML
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/share/rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:15
+  Rendered lists/index.html.erb within layouts/application (343.7ms)
+Completed 500 Internal Server Error in 364ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `post' for #<#<Class:0x00005627f8cb9190>:0x00005627f8cc9c48>):
+    34:               <% end %>
+    35:             </center>
+    36:           </td>
+    37:           <td><%= link_to 'Delete', post_path(post.id), :method => :delete %>
+    38:           <%# link_to "Deletar", list, class: "btn btn-outline-danger btn -sm", method: :delete, data: { confirm: "Tem certeza que deseja deletar a tarefa?" } %>
+    39:           </td>
+    40:         </tr>
+  
+app/views/lists/index.html.erb:37:in `block in _app_views_lists_index_html_erb__1025129395993476371_47364838905040'
+app/views/lists/index.html.erb:15:in `_app_views_lists_index_html_erb__1025129395993476371_47364838905040'
+Started GET "/lists" for ::1 at 2019-08-24 22:39:14 -0300
+Processing by ListsController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/share/rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.1ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:15
+  Rendered lists/index.html.erb within layouts/application (259.3ms)
+Completed 500 Internal Server Error in 263ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `post' for #<#<Class:0x00005627f8cb9190>:0x00005627f801e980>):
+    34:               <% end %>
+    35:             </center>
+    36:           </td>
+    37:           <td><%= link_to 'Delete', post_path(post.id), method: :delete %>
+    38:           <%# link_to "Deletar", list, class: "btn btn-outline-danger btn -sm", method: :delete, data: { confirm: "Tem certeza que deseja deletar a tarefa?" } %>
+    39:           </td>
+    40:         </tr>
+  
+app/views/lists/index.html.erb:37:in `block in _app_views_lists_index_html_erb__1025129395993476371_47364832273180'
+app/views/lists/index.html.erb:15:in `_app_views_lists_index_html_erb__1025129395993476371_47364832273180'
+Started GET "/lists" for ::1 at 2019-08-24 22:39:56 -0300
+Processing by ListsController#index as HTML
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/share/rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.1ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:15
+  Rendered lists/index.html.erb within layouts/application (290.3ms)
+Completed 500 Internal Server Error in 295ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `post' for #<#<Class:0x00005627f8cb9190>:0x00007f1d9d72fa80>):
+    34:               <% end %>
+    35:             </center>
+    36:           </td>
+    37:           <td><%= link_to 'Delete', post_path(post.id), method: :delete %>
+    38:           <%# link_to "Deletar", list, class: "btn btn-outline-danger btn -sm", method: :delete, data: { confirm: "Tem certeza que deseja deletar a tarefa?" } %>
+    39:           </td>
+    40:         </tr>
+  
+app/views/lists/index.html.erb:37:in `block in _app_views_lists_index_html_erb__1025129395993476371_69882587570560'
+app/views/lists/index.html.erb:15:in `_app_views_lists_index_html_erb__1025129395993476371_69882587570560'
+Started GET "/lists" for ::1 at 2019-08-24 22:40:09 -0300
+Processing by ListsController#index as HTML
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/share/rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.1ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:15
+  Rendered lists/index.html.erb within layouts/application (4.0ms)
+  Rendered lists/_navbar.html.erb (1.3ms)
+Completed 200 OK in 251ms (Views: 247.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/lists" for ::1 at 2019-08-24 22:40:46 -0300
+Processing by ListsController#index as HTML
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/share/rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.1ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:15
+  Rendered lists/index.html.erb within layouts/application (3.6ms)
+  Rendered lists/_navbar.html.erb (1.3ms)
+Completed 200 OK in 34ms (Views: 30.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/lists" for ::1 at 2019-08-24 22:40:55 -0300
+Processing by ListsController#index as HTML
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/share/rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.1ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:15
+  Rendered lists/index.html.erb within layouts/application (252.6ms)
+Completed 500 Internal Server Error in 294ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `post' for #<#<Class:0x00005627f8cb9190>:0x00007f1d9401acd0>):
+    34:               <% end %>
+    35:             </center>
+    36:           </td>
+    37:           <td><%= link_to "Deletar", list, post_path(post.id), class: "btn btn-outline-danger btn -sm", method: :delete, data: { confirm: "Tem certeza que deseja deletar a tarefa?" } %></td>
+    38:         </tr>
+    39: 
+    40:       <% else %>
+  
+app/views/lists/index.html.erb:37:in `block in _app_views_lists_index_html_erb__1025129395993476371_69882506959820'
+app/views/lists/index.html.erb:15:in `_app_views_lists_index_html_erb__1025129395993476371_69882506959820'
+Started GET "/lists" for ::1 at 2019-08-24 22:41:22 -0300
+Processing by ListsController#index as HTML
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/share/rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.1ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:15
+  Rendered lists/index.html.erb within layouts/application (4.3ms)
+  Rendered lists/_navbar.html.erb (2.2ms)
+Completed 200 OK in 449ms (Views: 445.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/lists" for ::1 at 2019-08-24 22:47:17 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ListsController#index as HTML
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/share/rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:15
+  Rendered lists/index.html.erb within layouts/application (10.2ms)
+  Rendered lists/_navbar.html.erb (1.7ms)
+Completed 200 OK in 302ms (Views: 282.4ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/lists/2" for ::1 at 2019-08-24 22:47:23 -0300
+Processing by ListsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"G4yZYeFsfsm4pQ9GVZX1td8QXZo5zIP/9gTUJ1iM7fQHeIHj7nCXc+enuYRllexlgmhzegCI6vBW0jIsyhCu8g==", "id"=>"2"}
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/lists_controller.rb:72
+  [1m[36mUsuario Load (0.1ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/share/rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/lists_controller.rb:62
+  [1m[36mList Destroy (0.2ms)[0m  [1m[31mDELETE FROM "lists" WHERE "lists"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/lists_controller.rb:62
+  [1m[35m (12.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/lists_controller.rb:62
+Redirected to http://localhost:3000/lists
+Completed 302 Found in 21ms (ActiveRecord: 12.7ms)
+
+
+Started GET "/lists" for ::1 at 2019-08-24 22:47:23 -0300
+Processing by ListsController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/share/rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.1ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:15
+  Rendered lists/index.html.erb within layouts/application (3.3ms)
+  Rendered lists/_navbar.html.erb (1.3ms)
+Completed 200 OK in 29ms (Views: 27.0ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/lists/1" for ::1 at 2019-08-24 22:47:28 -0300
+Processing by ListsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"hmMGY6QJNJ+HSKipzZ9HUVTQnirmqQUEJPD5xhyCpFaalx7hqxXdJdhKHmv9n16BCaiwyt/tbAuEJh/Njh7nUA==", "id"=>"1"}
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/lists_controller.rb:72
+  [1m[36mUsuario Load (0.1ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/share/rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/lists_controller.rb:62
+  [1m[36mList Destroy (0.5ms)[0m  [1m[31mDELETE FROM "lists" WHERE "lists"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/lists_controller.rb:62
+  [1m[35m (9.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/lists_controller.rb:62
+Redirected to http://localhost:3000/lists
+Completed 302 Found in 18ms (ActiveRecord: 10.7ms)
+
+
+Started GET "/lists" for ::1 at 2019-08-24 22:47:28 -0300
+Processing by ListsController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/share/rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.1ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:15
+  Rendered lists/index.html.erb within layouts/application (2.2ms)
+  Rendered lists/_navbar.html.erb (1.3ms)
+Completed 200 OK in 28ms (Views: 26.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/lists/new" for ::1 at 2019-08-24 22:47:30 -0300
+Processing by ListsController#new as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/share/rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering lists/new.html.erb within layouts/application
+  Rendered lists/_form.html.erb (7.4ms)
+  Rendered lists/new.html.erb within layouts/application (10.1ms)
+  Rendered lists/_navbar.html.erb (1.3ms)
+Completed 200 OK in 41ms (Views: 32.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/lists" for ::1 at 2019-08-24 22:47:38 -0300
+Processing by ListsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"82abyPhQ3E0zrjZKHJIdgw8yOzwTsd3LkLxCxYbYQGDvkoNK90w192ysgIgskgRTUkoV3Cr1tMQwaqTOFEQDZg==", "list"=>{"description"=>"Menradar as 9", "completed"=>"0"}, "commit"=>"Create List"}
+  [1m[36mUsuario Load (0.1ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/share/rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/lists_controller.rb:35
+  [1m[36mList Create (0.2ms)[0m  [1m[32mINSERT INTO "lists" ("description", "completed", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["description", "Menradar as 9"], ["completed", 0], ["created_at", "2019-08-25 01:47:38.891917"], ["updated_at", "2019-08-25 01:47:38.891917"]]
+  ↳ app/controllers/lists_controller.rb:35
+  [1m[35m (23.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/lists_controller.rb:35
+Redirected to http://localhost:3000/lists
+Completed 302 Found in 30ms (ActiveRecord: 23.5ms)
+
+
+Started GET "/lists" for ::1 at 2019-08-24 22:47:38 -0300
+Processing by ListsController#index as HTML
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/share/rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.1ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:15
+  Rendered lists/index.html.erb within layouts/application (3.4ms)
+  Rendered lists/_navbar.html.erb (1.2ms)
+Completed 200 OK in 31ms (Views: 28.6ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/lists/7" for ::1 at 2019-08-24 22:47:41 -0300
+Processing by ListsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0GpVfErkmI3+l1w0F1yf9FNAGjCb5utwGZfdecXkOmvMnk3+RfhxN6GV6vYnXIYkDjg00KKign+5QTtyV3h5bQ==", "list"=>{"description"=>"Menradar as 9", "completed"=>"1"}, "commit"=>"   Marcar   ", "id"=>"7"}
+  [1m[36mList Load (0.1ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/lists_controller.rb:72
+  [1m[36mUsuario Load (0.1ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/share/rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/lists_controller.rb:49
+  [1m[36mList Update (0.4ms)[0m  [1m[33mUPDATE "lists" SET "completed" = ?, "updated_at" = ? WHERE "lists"."id" = ?[0m  [["completed", 1], ["updated_at", "2019-08-25 01:47:41.738646"], ["id", 7]]
+  ↳ app/controllers/lists_controller.rb:49
+  [1m[35m (19.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/lists_controller.rb:49
+Redirected to http://localhost:3000/lists
+Completed 302 Found in 27ms (ActiveRecord: 20.1ms)
+
+
+Started GET "/lists" for ::1 at 2019-08-24 22:47:41 -0300
+Processing by ListsController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? ORDER BY "usuarios"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/share/rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.1ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:15
+  Rendered lists/index.html.erb within layouts/application (3.4ms)
+  Rendered lists/_navbar.html.erb (1.4ms)
+Completed 200 OK in 29ms (Views: 27.0ms | ActiveRecord: 0.2ms)
+
+
