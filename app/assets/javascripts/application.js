@@ -14,7 +14,7 @@
 //= require activestorage
 // require turbolinks
 //= require jquery
-// require jquery_ujs
+//= require jquery_ujs
 //= notify-js-legacy/notify
 //= require bootstrap/dist/js/bootstrap
 //= require popper.js/dist/popper
